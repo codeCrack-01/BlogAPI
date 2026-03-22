@@ -1,0 +1,36 @@
+@BlogAPI_HostAddress = http://localhost:5039
+
+GET {{BlogAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{BlogAPI_HostAddress}}/api/hello/
+Accept: application/json
+
+###
+
+GET {{BlogAPI_HostAddress}}/api/hello/Anonymous
+Accept: application/json
+
+###
+
+GET {{BlogAPI_HostAddress}}/api/posts
+Accept: application/json
+
+###
+
+GET {{BlogAPI_HostAddress}}/api/posts/1
+Accept: application/json
+
+###
+
+POST {{BlogAPI_HostAddress}}/api/posts/
+Content-Type: application/json
+
+{
+  "title": "My First Post",
+  "content": "This is the content of the post."
+}
+
+###
