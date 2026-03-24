@@ -1,6 +1,14 @@
-namespace BlogAPI.DTOs;
+using System.ComponentModel.DataAnnotations;
 
-public class CreatePostDto
+namespace BlogAPI.DTOs
 {
-    
+    public class CreatePostDto
+    {
+        [MinLength(3)]
+        [MaxLength(100)]
+        public required string Title { get; set; }
+        
+        [MinLength(10)]
+        public required string Content { get; set; }
+    }
 }

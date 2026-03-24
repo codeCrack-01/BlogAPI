@@ -29,8 +29,16 @@ POST {{BlogAPI_HostAddress}}/api/posts/
 Content-Type: application/json
 
 {
-  "title": "My First Post",
-  "content": "This is the content of the post."
+  "title": "Test Post",
+  "content": "DontMindMe"
 }
 
 ###
+
+POST {{BlogAPI_HostAddress}}/api/posts/
+Content-Type: application/json
+
+{
+  "title": "",
+  "content": "Error"
+}
